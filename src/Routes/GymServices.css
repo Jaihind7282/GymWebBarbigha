@@ -1,0 +1,111 @@
+.gym-services-container {
+  width: 85%;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.gym-services-container h2 {
+  font-size: 2.3rem;
+  color: red;
+  margin-bottom: 20px;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  padding: 20px;
+  margin: 60px auto;
+}
+
+.service-item {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.128);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.service-description h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.service-description p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.service-image img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid red;
+  margin-top: 15px;
+}
+
+/* Alternating backgrounds */
+.white-bg {
+  background-color: white;
+  color: #333;
+}
+
+.black-bg {
+  background-color: #333;
+  color: white;
+}
+
+.white-bg .service-description h3,
+.white-bg .service-description p {
+  color: #333;
+}
+
+.black-bg .service-description h3,
+.black-bg .service-description p {
+  color: white;
+}
+.intro-paragraph {
+  width: 90%;
+  margin: 20px auto;
+}
+
+/* Hover effect */
+.service-item:hover {
+  transform: translateY(-5px); /* Move the card slightly up */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Darker, more prominent shadow */
+}
+
+/* Optional: Change image scale on hover */
+.service-item:hover .service-image img {
+  transform: scale(1.04); /* Slight zoom effect */
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 763px) {
+  .gym-services-container {
+    width: 95%;
+    margin: 0;
+  }
+  .services-list {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin: 20px auto;
+  }
+
+  .service-item {
+    margin-bottom: 20px;
+  }
+
+  .service-image img {
+    width: 100px;
+    height: 100px;
+  }
+  .gym-services-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0px;
+  }
+}

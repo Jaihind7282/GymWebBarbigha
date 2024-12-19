@@ -1,0 +1,80 @@
+/* About Us Section */
+.about-us-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Container for the cards */
+.card-container {
+  width: 65%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(270px, 2fr)
+  ); /* Default 2fr */
+  gap: 50px;
+  padding: 0 20px;
+}
+
+/* Style for each card */
+.card {
+  background-color: #fc2d2d;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: ease 0.3s all;
+}
+.card:hover {
+  transform: translateY(-5px); /* Move the card slightly up */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.419); /* Darker, more prominent shadow */
+}
+
+/* Card image - rounded style */
+.card-image {
+  width: 150px; /* Adjust size as necessary */
+  height: 150px; /* Ensure the image is square */
+  object-fit: cover;
+  border: 5px solid #ffffff;
+  border-radius: 50%; /* Makes the image round */
+  margin: 40px auto 0 auto;
+  display: block; /* Centers the image */
+}
+
+/* Card information */
+.card-info {
+  padding: 15px;
+}
+
+/* Style for the role, name, and message */
+.card-role {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.card-name {
+  font-size: 1.7rem;
+  color: #000000;
+  margin: 10px 0;
+}
+
+.card-message {
+  font-size: 1rem;
+  font-style: italic;
+  color: #ffffff;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Media query for mobile/tablet screens */
+@media (max-width: 768px) {
+  .about-us-container {
+    width: 100%;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr; /* Change to 1fr for smaller screens */
+    width: 85%;
+  }
+}

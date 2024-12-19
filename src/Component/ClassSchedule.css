@@ -1,0 +1,112 @@
+.schedule-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: white; /* White background */
+}
+
+.schedule-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.schedule-header h1 {
+  font-size: 2.2rem;
+  color: red; /* Accent color for the header */
+}
+
+.schedule-header p {
+  color: #3e3e3e;
+  font-size: 1.2em;
+}
+
+/* Styling for the schedule cards */
+.schedule-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Default card styling */
+.schedule-card {
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.schedule-card:hover {
+  transform: translateY(-10px);
+}
+
+.schedule-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.class-description {
+  font-size: 1.1em;
+  margin: 15px 0;
+}
+
+.instructor {
+  font-size: 1.1em;
+  color: #ff0000;
+}
+
+.schedule-timing {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0;
+  text-align: left;
+}
+
+/* Timing color adjustments */
+.schedule-timing li {
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+
+/* Styling for text color in schedule-timing */
+.schedule-timing li strong {
+  color: #333; /* Default color for white background */
+}
+
+/* White background for the first, third, etc. */
+.white-background {
+  background-color: white;
+  color: #333; /* Text color for white background */
+}
+
+.white-background .schedule-timing li strong {
+  color: #333; /* Keep dark text for timing on white background */
+}
+
+/* Black background for the second, fourth, etc. */
+.black-background {
+  background-color: #333;
+  color: white; /* Text color for black background */
+}
+
+.black-background .schedule-timing li strong {
+  color: white; /* Change timing text to white on black background */
+}
+
+/* Styling for responsiveness */
+@media (max-width: 768px) {
+  .schedule-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .schedule-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}

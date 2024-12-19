@@ -1,0 +1,74 @@
+.quote-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 180px;
+  background: linear-gradient(to right, #700c0cc5 50%, rgba(0, 0, 0, 0) 100%);
+  color: #ffffffcf;
+  padding: 0 10rem;
+  font-size: 3.5rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 10;
+  text-decoration: underline red 2.5px;
+  text-underline-offset: 8px;
+  opacity: 0;
+  animation: fadeIn 1s forwards; /* Animation to fade in each word */
+}
+.quote-overlay-p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 180px;
+  color: #ffffffec;
+  padding: 0 10rem;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 10;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 850px) {
+  .quote-overlay {
+    padding: 0px 20px;
+    font-size: 1.8rem;
+    text-underline-offset: 3px;
+  }
+  .quote-overlay-p {
+    width: 150px;
+    font-size: 1rem;
+    padding: 0px 35px;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 550px) {
+  .quote-overlay {
+    width: 130px;
+    padding: 0px 20px;
+    font-size: 1.2rem;
+    text-decoration: underline red;
+    text-underline-offset: 4px;
+  }
+  .quote-overlay-p {
+    width: 150px;
+    font-size: 0.7rem;
+    padding: 0px 10px;
+    margin-top: 2rem;
+  }
+}

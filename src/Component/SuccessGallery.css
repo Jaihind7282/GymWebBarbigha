@@ -1,0 +1,104 @@
+.client-success-stories {
+  width: 100%;
+  padding: 40px 0px; /* Horizontal padding */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: rgba(255, 0, 0, 0.719);
+  font-weight: bold;
+}
+
+.story-card {
+  height: 270px;
+  margin: 0 auto;
+  padding: 60px 10px;
+  color: #fff;
+  background-color: #333;
+  margin: 10px 50px; /* Center the cards */
+  transition: all 0.3s ease;
+  text-align: center; /* Center text */
+}
+.section-title-p {
+  color: #3e3e3e;
+  font-size: 1.2em;
+}
+
+.client-image img {
+  width: 120px; /* Image size */
+  height: 120px;
+  margin: 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.client-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: rgb(236, 21, 21);
+  font-weight: bold;
+}
+
+.journey {
+  font-size: 1rem;
+  color: #dbdbdb;
+  font-style: italic;
+  margin: 0 auto;
+  max-width: 280px; /* Max width of journey text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .story-card {
+    width: 85%; /* Card width is reduced on small screens */
+    height: 250px;
+    padding: 40px 0;
+    margin: 15px auto; /* Ensure cards have some space on mobile */
+  }
+
+  .client-image img {
+    width: 100%;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+  }
+
+  .client-info h3 {
+    font-size: 1.25rem;
+  }
+
+  .journey {
+    font-size: 0.95rem;
+    padding: 0 10px;
+    max-width: 270px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .journey {
+    font-size: 0.9rem;
+    max-width: 240px; /* Adjust journey text size for narrow screens */
+  }
+
+  .client-image img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .story-card {
+    width: 20%; /* Even smaller cards on very small screens */
+  }
+}

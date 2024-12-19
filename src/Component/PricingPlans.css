@@ -1,0 +1,108 @@
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #212121;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.pricing-header h1 {
+  font-size: 2.5rem;
+  color: red;
+}
+
+.pricing-header p {
+  color: #bbb;
+  font-size: 1.2em;
+}
+
+/* Styling for the pricing cards */
+.pricing-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.pricing-card {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.9s ease;
+}
+
+.pricing-card:hover {
+  background-color: rgb(0, 0, 0);
+  transform: translateY(-10px);
+}
+
+.pricing-card h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #dbdbdb;
+}
+
+.pricing-card .price {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: red;
+}
+
+.pricing-card .duration {
+  font-size: 1.1em;
+  color: #bbb;
+}
+
+.pricing-card .benefits {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+.pricing-card .benefits li {
+  margin: 10px 0;
+  font-size: 0.8rem;
+  color: #ddd;
+}
+
+.popular {
+  background-color: #444;
+  border: 2px solid red;
+}
+
+.popular-badge {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .pricing-header h1 {
+    font-size: 2rem;
+    width: 85%;
+    margin: 0 auto;
+  }
+}
